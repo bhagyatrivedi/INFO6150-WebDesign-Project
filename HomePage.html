@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../INFO6150-WebDesign-Project/assets/img/logo.png" alt="Logo" class="img-fluid"></a>
+            <a class="navbar-brand" href="#"><img src="/assets/img/logo.png" alt="Logo" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,20 +41,121 @@
         </div>
     </nav>
 
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+     <!-- Jumbotron/Header Section -->
+     <div class="p-5 bg-image" style="background-image: url('assets/img/jumbotron-img.png'); height: 85vh;">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3">WELCOME TO CINEMATOGRAPHY</h1>
+                    <h4 class="mb-3">Book your tickets for the latest movies!</h4>
+                    <a class="btn btn-outline-light btn-lg mb-4" href="#movies" role="button">Browse Movies</a>
+                </div>
             </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+   
+    <!--Movies_Card-->
+    <div class="container my-5">
+        <h2 class="mb-4">Recommended Movies</h2>
+        <div class="row flex-nowrap overflow-auto">
+          <!-- Movie Card 1 -->
+          <div class="col">
+            <div class="card card-block mx-2" style="width: 18rem;">
+              <img class="card-img-top" src="assets/img/movie1.png" alt="Twisters">
+              <div class="card-body">
+                <h5 class="card-title">Twisters</h5>
+                <p class="card-text">Some description.</p>
+                <div class="ratings">
+                  <span class="rating">8.2/10</span>
+                  <span class="votes">52.1K Votes</span>
+                </div>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
             </div>
-            <p>&copy; 2024 Movie Tickets. All Rights Reserved.</p>
+          </div>
+
+          <div class="col">
+            <div class="card card-block mx-2" style="width: 18rem;">
+              <img class="card-img-top" src="assets/img/movie2.png" alt="Come Together">
+              <div class="card-body">
+                <h5 class="card-title">Come Together</h5>
+                <p class="card-text">Some description.</p>
+                <div class="ratings">
+                  <span class="rating">8/10</span>
+                  <span class="votes">40.1K Votes</span>
+                </div>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-block mx-2" style="width: 18rem;">
+              <img class="card-img-top" src="assets/img/movie3.png" alt="Fighter">
+              <div class="card-body">
+                <h5 class="card-title">Fighter</h5>
+                <p class="card-text">Some description.</p>
+                <div class="ratings">
+                  <span class="rating">9/10</span>
+                  <span class="votes">60.1K Votes</span>
+                </div>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-block mx-2" style="width: 18rem;">
+              <img class="card-img-top" src="assets/img/movie4.png" alt="K.G.F Chapter 2">
+              <div class="card-body">
+                <h5 class="card-title">K.G.F Chapter 2</h5>
+                <p class="card-text">Some description.</p>
+                <div class="ratings">
+                  <span class="rating">9.5/10</span>
+                  <span class="votes">80.1K Votes</span>
+                </div>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-block mx-2" style="width: 18rem;">
+              <img class="card-img-top" src="assets/img/movie5.png" alt="BRAHMASTRA">
+              <div class="card-body">
+                <h5 class="card-title">BRAHMASTRA</h5>
+                <p class="card-text">Some description.</p>
+                <div class="ratings">
+                  <span class="rating">8.5/10</span>
+                  <span class="votes">30.1K Votes</span>
+                </div>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for other movies -->
+        </div>
+      </div>
+      
+
+      <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <section class="mb-4">
+                <!-- Social media icons -->
+            </section>
+            <section class="">
+                <form action="">
+                    <!-- Newsletter subscription form -->
+                </form>
+            </section>
+            <section class="mb-4">
+                <p>
+                    Your movie booking platform. Book tickets for your favorite movies from anywhere, anytime.
+                </p>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                 © 2024 MovieBooking. All Rights Reserved.
+            </div>
         </div>
     </footer>
     

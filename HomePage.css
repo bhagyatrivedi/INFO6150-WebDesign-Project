@@ -22,26 +22,25 @@
     background-color: #007bff; 
 }
 
+/* Footer styling */
 footer {
-    background-color: #343a40; 
-    color: #fff; 
-    padding: 30px 0; 
+    background-color: #010101;
+    color: #fff;
+    padding: 10px 50;
 }
 
-.footer-links {
-    margin-bottom: 20px;
-}
-
+/* Footer links styling */
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
+/* Social icons styling */
 .social-icons a {
     color: #fff;
     margin-right: 10px;
@@ -50,3 +49,36 @@ footer {
 .social-icons a:hover {
     color: #007bff;
 }
+
+/*------CARD--------*/
+
+.card {
+    flex: 0 0 auto;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 15vw; 
+    object-fit: cover; 
+  }
+  
+  .ratings {
+    
+    margin-bottom: 1rem;
+  }
+  
+  .ratings .rating,
+  .ratings .votes {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .overflow-auto {
+    white-space: nowrap;
+  }
+  
+  .card-block {
+    display: inline-block;
+  }
+  
+
