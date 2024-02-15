@@ -51,6 +51,11 @@ Containers are used to wrap content and provide padding and alignment.
 ### Row
 Rows are used to create horizontal groups of columns.
 
+### Radio
+Radios are used to check the favourite genre of the user
+
+### Checkbox
+Checkboxes are used to add on top of current booking.
 
 ## Project Structure:
 The project consists of the following files and directories:
