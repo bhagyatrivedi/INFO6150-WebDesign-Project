@@ -21,12 +21,11 @@
     color: #fff;
     background-color: #007bff; 
 }
-/* footer */
+
 footer {
     background-color: #343a40; 
     color: #fff; 
     padding: 30px 0; 
-    margin-top: 20px;
 }
 
 .footer-links {
@@ -50,4 +49,8 @@ footer {
 
 .social-icons a:hover {
     color: #007bff;
+}
+
+ .custom-input-width {
+    width: 200px; 
 }
