@@ -1,3 +1,8 @@
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    validateForm();
+});
+
 function validateForm() {
     console.log("Hi")
     var username = document.getElementById('username').value;
@@ -5,7 +10,7 @@ function validateForm() {
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmPassword').value;
 
-    // Validate username
+   
     if (username.trim() === '') {
         document.getElementById('username').classList.add('is-invalid');
         return false;
@@ -13,7 +18,7 @@ function validateForm() {
         document.getElementById('username').classList.remove('is-invalid');
     }
 
-    // Validate email
+   
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         document.getElementById('email').classList.add('is-invalid');
@@ -22,7 +27,7 @@ function validateForm() {
         document.getElementById('email').classList.remove('is-invalid');
     }
 
-    // Validate password
+   
     if (password.length < 8) {
         document.getElementById('password').classList.add('is-invalid');
         return false;
@@ -30,7 +35,7 @@ function validateForm() {
         document.getElementById('password').classList.remove('is-invalid');
     }
 
-    // Validate confirm password
+   
     if (confirmPassword !== password) {
         document.getElementById('confirmPassword').classList.add('is-invalid');
         return false;
@@ -38,7 +43,7 @@ function validateForm() {
         document.getElementById('confirmPassword').classList.remove('is-invalid');
     }
 
-    // If all validations pass, redirect to LoginPage.html
+    
     //window.location.replace('LoginPage.html');
     return true;
 }
