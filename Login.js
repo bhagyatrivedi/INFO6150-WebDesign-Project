@@ -1,4 +1,6 @@
 function validateForm() {
+
+    console.log("Hi");
     // Retrieve input values
     var username = document.getElementById('username').value.trim();
     var password = document.getElementById('password').value.trim();
@@ -25,6 +27,9 @@ function validateForm() {
         // Add was-validated class to form to trigger Bootstrap validation styles
         document.getElementById('loginForm').classList.add('was-validated');
         return false; // Prevent form submission
+    } else {
+        // Remove was-validated class from form
+        document.getElementById('loginForm').classList.remove('was-validated');
     }
 
     // If all fields are filled, allow form submission

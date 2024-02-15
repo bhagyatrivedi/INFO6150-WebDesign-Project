@@ -20,7 +20,7 @@
                 <ul class="dropdown-menu" aria-labelledby="locationDropdown">
                     <li><a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> New York</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> Los Angeles</a></li>
-                    <!-- Add more locations as needed -->
+
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,7 +104,7 @@
           <!-- Movie Card 1 -->
           <div class="col">
             <div class="card card-block mx-2" style="width: 18rem;">
-              <img class="card-img-top" src="assets/img/movie1.png" alt="Twisters">
+              <img class="card-img-top" src="./assets/img/movie1.png" alt="Twisters">
               <div class="card-body">
                 <h5 class="card-title">Twisters</h5>
                 <p class="card-text">Some description.</p>
@@ -187,7 +187,7 @@
                 <!-- Event 1 -->
                 <div class="carousel-item active">
                     <div class="card">
-                        <img src="../INFO6150-WebDesign-Project/assets/img/karan.png" class="card-img-bottom" alt="Event 1">
+                        <img src="/assets/img/karan.png" class="card-img-bottom" alt="Event 1">
                         <div class="card-body" style="display: grid;">
                             <h5 class="card-title" style="text-decoration: solid ">Film Festival</h5>
                             <p class="card-text">Indian Film Festival of Melbourne to celebrate 25 years of Karan Johar</p>
@@ -198,7 +198,7 @@
                 <!-- Event 2 -->
                 <div class="carousel-item">
                     <div class="card">
-                        <img src="../INFO6150-WebDesign-Project/assets/img/sara.png" class="card-img-top" alt="Event 2" >
+                        <img src="/assets/img/sara.png" class="card-img-top" alt="Event 2" >
                         <div class="card-body" style="display: grid;">
                             <h5 class="card-title">Sara's Movie Premiere</h5>
                             <p class="card-text">Ae Watan Mere Watan: Sara Ali Khan’s patriotic film to premiere in March!</p>
@@ -209,7 +209,7 @@
                 <!-- Event 3 -->
                 <div class="carousel-item">
                     <div class="card">
-                        <img src="../INFO6150-WebDesign-Project/assets/img/sam.png" class="card-img-top" alt="Event 3">
+                        <img src="/assets/img/sam.png" class="card-img-top" alt="Event 3">
                         <div class="card-body" style="display: grid;">
                             <h5 class="card-title">Award Ceremony</h5>
                             <p class="card-text">Filmfare Awards 2024: Sam Bahadur Wins Big In Technical Category</p>
@@ -219,6 +219,7 @@
                 </div>
                 <!-- Add more events as needed -->
             </div>
+            
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -230,6 +231,59 @@
             </button>
         </div>
     </section>
+    <div class="container my-5" style="display: grid;">
+        <h2 class="mb-4">Favourite Genres</h2>
+        
+        <!-- Radio Buttons -->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="preference" id="preference1" value="option1">
+            <label class="form-check-label" for="preference1">
+                Thriller
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="preference" id="preference2" value="option2">
+            <label class="form-check-label" for="preference2">
+                Sci-Fi
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="preference" id="preference3" value="option2">
+            <label class="form-check-label" for="preference3">
+                Horror
+            </label>
+        </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="container my-5">
+        <h2 class="mb-4">Select Booking Preferences</h2>
+        <p class="mb-5" style="">Select one or more to add to your booking!</p>
+        <!-- Checkbox for Premium Seating -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="premiumSeating">
+            <label class="form-check-label" for="premiumSeating">
+                Premium Seating (+$5)
+            </label>
+        </div>
+
+        <!-- Checkbox for Snack Combo -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="snackCombo">
+            <label class="form-check-label" for="snackCombo">
+                Snack Combo (+$10)
+            </label>
+        </div>
+
+        <!-- Checkbox for Reserved Parking -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="reservedParking">
+            <label class="form-check-label" for="reservedParking">
+                Reserved Parking (+$3)
+            </label>
+        </div>
+
+    </div>
 
     <footer>
         <div class="container">
@@ -251,27 +305,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
        document.addEventListener('DOMContentLoaded', function() {
-    // Get all "Book Now" buttons
-    var bookNowButtons = document.querySelectorAll('.btn-book-now');
 
-    // Add event listener to each button
-    bookNowButtons.forEach(function(button) {
+        var bookNowButtons = document.querySelectorAll('.btn-book-now');
+
+
+        bookNowButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        // Check if user is logged in (replace this condition with your actual login check)
-        var isLoggedIn = false; // Replace false with your actual login check
+        var isLoggedIn = false; 
         
-        // If user is not logged in, show the login toast
         if (!isLoggedIn) {
           var loginToast = new bootstrap.Toast(document.getElementById('loginToast'));
           loginToast.show();
         } else {
-          // If user is logged in, proceed with booking process
-          // You can redirect the user to the booking page or perform any other action here
+         
           console.log('Booking process initiated');
         }
       });
     });
   });
       </script>
+
+
 </body>
 </html>
