@@ -62,3 +62,21 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+/* Custom CSS for error styling */
+input:invalid {
+    border: 1px solid red !important;
+}
+
+.invalid-feedback::before {
+    /* Exclamation mark */
+    color: red;
+}
+
+.exclamation-mark {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: red;
+}
