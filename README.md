@@ -57,6 +57,9 @@ Radios are used to check the favourite genre of the user
 ### Checkbox
 Checkboxes are used to add on top of current booking.
 
+### Input
+Input fields are used to take the user input
+
 ## Project Structure:
 The project consists of the following files and directories:
 
